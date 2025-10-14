@@ -62,7 +62,7 @@ Camagru met l’accent sur la fiabilité, la sécurité et la performance, tout 
 ## Structure du projet
 
 ```
-camagru/
+Camagru/
 ├── docker-compose.yml
 ├── nginx.conf
 ├── src/
@@ -106,8 +106,8 @@ camagru/
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/ifranc-r/camagru.git
-cd camagru
+git clone https://github.com/ifranc-r/Camagru.git
+cd Camagru
 ```
 
 ### 2. Créer le fichier `.env`
@@ -154,6 +154,6 @@ Libre d’utilisation, de modification et de diffusion, à condition d’en cons
 
 ## Auteur
 
-**Votre Nom**  
+**FRANC-REGIS TERENCE**  
 [GitHub](https://github.com/ifranc-r)  
-[Email](mailto:votremail@example.com)
+
