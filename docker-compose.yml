@@ -1,0 +1,16 @@
+services:
+  nginx:
+    image: nginx:alpine
+
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - php
+
+  php:
+    image: php:8.2-fpm-alpine
+    volumes:
+      - ./src:/var/www
