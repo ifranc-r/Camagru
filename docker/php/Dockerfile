@@ -15,3 +15,4 @@ RUN docker-php-ext-configure gd \
 WORKDIR /var/www
 
 COPY php.ini /usr/local/etc/php/conf.d/99-overrides.ini
+COPY fpm-overrides.conf /usr/local/etc/php-fpm.d/zz-overrides.conf
