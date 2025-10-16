@@ -13,3 +13,5 @@ RUN docker-php-ext-configure gd \
       gd pdo_mysql
 
 WORKDIR /var/www
+
+COPY php.ini /usr/local/etc/php/conf.d/99-overrides.ini
