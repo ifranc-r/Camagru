@@ -1,0 +1,8 @@
+{
+    "name": "inti/camagru",
+    "description": "Camagru project",
+    "type": "project",
+    "require": {
+        "fakerphp/faker": "^1.24"
+    }
+}

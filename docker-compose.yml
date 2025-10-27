@@ -17,6 +17,7 @@ services:
       - ./.env
     volumes:
       - ./src:/var/www
+      - ./database:/var/www/database 
 
   db:
     image: mariadb:11
@@ -32,6 +33,13 @@ services:
       interval: 5s
       timeout: 3s
       retries: 10
+
+  composer:
+    image: composer:2
+    working_dir: /app
+    volumes:
+      - ./src:/app
+
 
 volumes:
   db_data:

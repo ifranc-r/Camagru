@@ -1,1 +1,94 @@
+# ============================================
+# 1️⃣  ENVIRONNEMENT ET CONFIG
+# ============================================
 .env
+.env.local
+.env.*.local
+*.env.backup
+*.env.example
+
+# ============================================
+# 2️⃣  DEPENDANCES (Composer, Node, etc.)
+# ============================================
+# PHP / Composer
+vendor/
+
+# Node (si tu fais du front plus tard)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ============================================
+# 3️⃣  CACHE / LOGS
+# ============================================
+# Fichiers temporaires PHP
+*.log
+*.cache
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Dossiers de cache de frameworks
+storage/
+bootstrap/cache/
+var/cache/
+var/log/
+tmp/
+logs/
+
+# ============================================
+# 4️⃣  SYSTEME ET OS
+# ============================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.idea/
+.vscode/
+*.iml
+
+# ============================================
+# 5️⃣  DOCKER ET BUILD
+# ============================================
+# Images, volumes, data locales
+**/db_data/
+**/database_data/
+**/mysql/
+**/mariadb/
+**/redis_data/
+**/pg_data/
+
+# Fichiers générés par docker compose
+*.pid
+*.sock
+
+# ============================================
+# 6️⃣  UPLOADS ET FICHIERS GENERES
+# ============================================
+# Images uploadées par les utilisateurs
+src/public/uploads/
+src/public/thumbs/
+src/public/tmp/
+
+# ============================================
+# 7️⃣  OUTILS
+# ============================================
+# Mac & Linux
+*.lock
+*.tar
+*.zip
+*.gz
+
+# Windows
+desktop.ini
+
+# ============================================
+# 8️⃣  SECRETS OU CLES
+# ============================================
+*.pem
+*.key
+*.crt
+*.p12
+*.keystore
+*.cert
